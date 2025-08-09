@@ -1,0 +1,10 @@
+algoritmo
+
+var
+     
+algoritmo
+var
+   numero: inteiro
+inicio
+   escreva("Olá, Git!")
+fimalgoritmo
