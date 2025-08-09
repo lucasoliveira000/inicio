@@ -1,0 +1,7 @@
+cliente 
+endereço 
+cpf
+data de cadastro
+cep
+produto
+valor 
