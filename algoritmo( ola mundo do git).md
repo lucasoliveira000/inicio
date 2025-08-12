@@ -1,32 +1,17 @@
-algoritmo
+algoritmo" olá mundo"
 
 
 
 var
-
-     nome: caractere
-
-     n1,n2,s: real
-
- 
+     nome,eu,acao: caractere
 
 inicio
-
           escreva(" olá mundo ")
-
           leia (nome)
-
-          escreva(" digite um numero")
-
-          leia (n1)
-
-          escreva(" escreva outro numero")
-
-          leia(n2)
-
-&nbsp;         s <- (n1+n2)
-
-          escreva (" o resultado as soma é",  s)
+          escreva(" digite seu nome ? ")
+          leia (eu)
+          escreva(" muito prazer", eu )
+fimalgoritmo
 
  
 
