@@ -6,7 +6,7 @@ inicio
 
       escreval(" ---------------------------")
       escreval(" DEPARTAMENTO DE TRNASITO")
-      escreval(" ---------------------------")
+      escreval("---------------------------")
 
       escreva(" ano atual: ")
       leia ( i1)
@@ -14,7 +14,7 @@ inicio
       leia (i2)
       
       
-      escrevaL(" -----------STATUS-----------")
+      escrevaL("-----------STATUS-----------")
 
       
       idade <- (i1-i2)
