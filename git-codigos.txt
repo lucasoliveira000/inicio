@@ -1,0 +1,31 @@
+algoritmo "habilitação"
+var
+   i1,i2,idade:inteiro
+
+inicio
+
+      escreval(" ---------------------------")
+      escreval(" DEPARTAMENTO DE TRNASITO")
+      escreval(" ---------------------------")
+
+      escreva(" ano atual: ")
+      leia ( i1)
+      escreva(" ano de nascimento: ")
+      leia (i2)
+      
+      
+      escrevaL(" -----------STATUS-----------")
+
+      
+      idade <- (i1-i2)
+      se idade >= 18 entao
+         escreval(" você tem" ,idade," anos e esta apto a tirar a habilitação ")
+         
+         escreval("-----------------------------------------------------------")
+         
+      senao
+           escreval(" você tem", idade," anos e ainda não esta apto a tirar habilitação ")
+           
+           escreval("------------------------------------------------------------")
+      fimse
+fimalgoritmo
