@@ -1,0 +1,21 @@
+algoritmo "par-ou-impar-usando-função"
+
+
+var
+   n:inteiro
+   r,cont:caractere
+funcao parouimpar(v:inteiro):caractere
+inicio
+   se(v%2=0)entao
+     retorne "par"
+   senao
+     retorne "impar"
+   fimse
+fimfuncao
+
+inicio
+      escreva("digite um numero:")
+      leia(n)
+      r<-parouimpar(n)
+      escreval("o numero ",n," é um valor ",r)
+fimalgoritmo

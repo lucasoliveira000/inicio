@@ -1,0 +1,38 @@
+algoritmo "PAR-OU-IMPAR-PARAMETRO-POR-VALOR-PROCEDIMENTO-"
+var
+  quant, cont, n, somaPares, somaImpares: inteiro
+
+procedimento parouimpar(v1: inteiro)
+inicio
+  se (v1 % 2 = 0) entao
+    escreval("O número ", v1, " é par")
+  senao
+    escreval("O número ", v1, " é ímpar")
+  fimse
+fimprocedimento
+
+procedimento soma(v2: inteiro)
+inicio
+  se (v2 % 2> 0) entao
+    somaImpares <- somaImpares + v2
+  senao
+    somaPares <- somaPares + v2
+  fimse
+fimprocedimento
+
+inicio
+  somaPares <- 0
+  somaImpares <- 0
+
+  escreva("contar ate quanto: ")
+  leia(quant)
+
+  para cont <- 1 ate quant faca
+    escreva("digite um numero: ")
+    leia(n)
+    parouimpar(n)
+    soma(n)
+  fimpara
+  escreval("O total dos valores ímpares é ", somaImpares)
+  escreval("O total dos valores pares é ", somaPares)
+fimalgoritmo

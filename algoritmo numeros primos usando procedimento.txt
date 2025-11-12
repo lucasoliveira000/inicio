@@ -1,0 +1,42 @@
+algoritmo "numeros primos"
+var
+   c, n, contdiv, SOMAP, SOMANP: inteiro
+   r: caractere
+
+procedimento PRIMO
+inicio
+   repita
+      escreva("Digite um numero: ")
+      leia(n)
+      
+      contdiv <- 0
+      c <- 1
+
+      repita
+         se (n % c = 0) entao
+            contdiv <- contdiv + 1
+         fimse
+         c <- c + 1
+      ate c > n
+
+      se (contdiv>2) entao
+         escreval("O valor ", n, " não é primo.")
+         SOMANP <- SOMANP + n
+      senao
+            escreval("O valor ", n, " é primo.")
+            SOMAP <- SOMAP + n
+      fimse
+
+      escreva("QUER CONTINUAR? sim/nao: ")
+      leia(r)
+
+    ate(r="nao")
+fimprocedimento
+
+inicio
+   SOMAP <- 0
+   SOMANP <- 0
+   PRIMO
+   escreval("a soma total de numros primos é", somap)
+   escreval("a soma total de numeros nao primos é", somanp)
+fimalgoritmo

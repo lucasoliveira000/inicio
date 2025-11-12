@@ -1,0 +1,33 @@
+algoritmo "contagem inteligente"
+
+var
+   inicial,final,contador,somatotal:inteiro
+procedimento cont1
+inicio
+       se (inicial<=final)entao
+      contador <-(inicial)
+          enquanto (contador<=FINAL)FACA
+                  escreval(contador)
+                  somatotal<-somatotal+contador
+                  contador<-(contador+1)
+          fimenquanto
+      senao
+           contador <-(inicial)
+
+           enquanto (contador>=final)faca
+                   escreva(contador)
+                   contador <-(contador-1)
+           fimenquanto
+     fimse
+fimprocedimento
+
+inicio
+      escreval("COMECAR DO NUMERO?: ")
+      leia (inicial)
+      escreval("ATE O NUMERO?: ")
+      leia (final)
+      cont1
+      escreval("A SOMA TOTAL DOS VALORES CONTADOS É:", somatotal)
+
+
+fimalgoritmo

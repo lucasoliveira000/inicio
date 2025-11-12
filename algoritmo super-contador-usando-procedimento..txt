@@ -1,12 +1,10 @@
-algoritmo "super contador sua opcao"
+algoritmo "super-contador-usando-procedimento"
 
 var
    n,c,sub:inteiro
-
+procedimento contador()
 inicio
-      repita
-
-            escreval("               ")
+         escreval("               ")
             C <-1
             escreval("===============")
             escreval("|    MENU     |")
@@ -34,6 +32,12 @@ inicio
                 fimse
 
             fimse
+
+fimprocedimento
+inicio
+      repita
+            contador()
+
       ate(n=3)
 
 fimalgoritmo

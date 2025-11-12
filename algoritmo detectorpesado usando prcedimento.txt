@@ -1,0 +1,33 @@
+algoritmo "detectorpesado"
+
+var
+   i:inteiro
+   n,pesado:caractere
+   p,mai:real
+   procedimento topo()
+   inicio
+         limpatela
+         escreval("--------------------------------")
+         escreval("    DETECTOR    DE     PESADO   ")
+         escreval("  maior peso ate agora",mai,"kg ")
+         escreval("--------------------------------")
+   fimprocedimento
+   
+   
+inicio
+      topo()
+      para i <- 1 ate 3 faca
+           escreva(" digite um nome : ")
+           leia(n)
+           escreva("digite o peso de  ", N,":" )
+           leia (p)
+           se(p>mai) entao
+             mai<-p
+             pesado<-n
+          fimse
+          topo()
+     fimpara
+     limpatela
+     topo()
+     escreval(" a pessoa mais pesada foi ",pesado," com",mai,"kg")
+fimalgoritmo

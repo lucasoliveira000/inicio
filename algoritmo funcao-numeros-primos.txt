@@ -1,0 +1,25 @@
+algoritmo "funcao-numeros-primos"
+
+var
+   N1,C,CONT:INTEIRO
+FUNCAO PRIMO(CONT,C:INTEIRO):INTEIRO
+INICIO
+    REPITA
+         SE(N1%C=0)ENTAO
+            CONT<-CONT+1
+         FIMSE
+         C<-C+1
+    ATE(C>N1)
+    RETORNE (CONT)
+FIMFUNCAO
+inicio
+      ESCREVA("DIGITE UM NUMERO: ")
+      LEIA(N1)
+      C<-1
+      CONT<-PRIMO(CONT,C)
+      SE(CONT=2)ENTAO
+         ESCREVAL("O NUMERO",N1," É PRIMO")
+      SENAO
+         ESCREVAL("O NUMERO",N1," NAO É PRIMO")
+      FIMSE
+fimalgoritmo
