@@ -1,4 +1,4 @@
-algoritmo "PAR-OU-IMPAR-PARAMETRO-POR-VALOR-PROCEDIMENTO-"
+algoritmo "PAR-OU-IMPAR-PARAMETRO-POR-VALOR-PROCEDIMENTO-DUPLO"
 var
   quant, cont, n, somaPares, somaImpares: inteiro
 

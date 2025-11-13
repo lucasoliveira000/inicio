@@ -1,0 +1,18 @@
+algoritmo "tabuada do que vc quiser"
+
+var
+   cont,n,r,f:inteiro
+inicio
+
+      escreval("você quer a tabuada de que numero?: ")
+      leia(n)
+      escreval("quantas vezes?: ")
+      leia(f)
+      cont <-1
+      repita
+            r <- n*cont
+            escreval(n ,"x" ,cont,"=", r)
+            cont <- cont +1
+            
+      ate (cont>f)
+fimalgoritmo

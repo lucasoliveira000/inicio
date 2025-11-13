@@ -1,0 +1,39 @@
+algoritmo "super contador sua opcao"
+
+var
+   n,c,sub:inteiro
+
+inicio
+      repita
+
+            escreval("               ")
+            C <-1
+            escreval("===============")
+            escreval("|    MENU     |")
+            escreval("===============")
+
+            escreval("|[1] de 1 a 10|")
+            escreval("|[2] de 10 a 1|")
+            escrevaL("|[3]  sair    |")
+            escreval("===============")
+            leia(n)
+            se(n=1)entao
+              c<-0
+              repita
+                   c <-(c+1)
+                   escreva (c)
+                   ate (c=10)
+            senao
+
+                se(n=2) entao
+                c <- 11
+                  repita
+                        c<-(c-1)
+                        escreva(c)
+                  ate(c=1)
+                fimse
+                      
+            fimse
+      ate(n=3)
+
+fimalgoritmo

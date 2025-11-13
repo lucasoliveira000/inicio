@@ -1,0 +1,52 @@
+algoritmo "melhor aluno da classe"
+
+
+var
+   QA:INTEIRO
+   NOME,MA,PA:CARACTERE
+   NTA,CONTADOR,MAIOR,MENOR:real
+
+inicio
+
+      escreval("--------------------------")
+      escreval("  ESCOLA SANTA PAÇIENCIA  ")
+      escreval("--------------------------")
+      
+      escreva(" quantos alunos a turma tem? ")
+      leia(QA)
+      ESCREVAL("--------------------------")
+
+      CONTADOR<-0
+
+      ENQUANTO (CONTADOR<QA) FACA
+                ESCREVA("NOME DO ALUNO: ")
+                LEIA(NOME)
+                ESCREVA("NOTA DO ALUNO: ")
+                LEIA(NTA)
+                SE(CONTADOR=0)ENTAO
+                   MAIOR<-NTA
+                   MENOR<-NTA
+                   MA<-NOME
+                   PA<-NOME
+
+                SENAO
+                     SE(NTA>MAIOR) ENTAO
+                        MAIOR<-(NTA)
+                        MA<-NOME
+                     SENAO
+                          SE(NTA<MENOR)ENTAO
+                             MENOR<-(NTA)
+                             PA<-NOME
+                          
+                          FIMSE
+                     FIMSE
+                FIMSE
+
+                CONTADOR<-CONTADOR+1
+                
+      FIMENQUANTO
+      
+      ESCREVAl("A MAIOR NOTA FOI DE ", MA," COM", MAIOR)
+      escrevaL("A PIOR NOTA FOI DE ", PA," COM", MENOR)
+
+fimalgoritmo

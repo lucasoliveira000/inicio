@@ -1,0 +1,36 @@
+algoritmo "contador numerico MAIOR E MENOR"
+
+var
+   cont,n,s,maior,menor:inteiro
+
+inicio
+      cont <-1
+      s <-0
+      enquanto (cont <= 05) faca
+      escreva("digite o",cont," valor: ")
+      leia (n)
+      se (cont=1) entao
+      
+      
+      maior <- n
+      menor <- n
+      senao
+           se(n>maior)entao
+             maior <- n
+           senao
+                se(n<menor)entao
+                  menor <- n
+                fimse
+           fimse
+      fimse
+         
+      s <-s+n
+         
+      cont <-cont+1
+         
+     fimenquanto
+     escreval(" a soma dos valores foi:" ,s)
+     escreval(" o maior numero digitado foi:", maior)
+     escreval(" o menor numero digitado foi:", menor)
+
+fimalgoritmo

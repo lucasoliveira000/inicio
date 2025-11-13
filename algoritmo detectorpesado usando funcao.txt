@@ -1,4 +1,4 @@
-algoritmo "detectorpesado"
+	algoritmo "detectorpesado"
 
 var
    i:inteiro

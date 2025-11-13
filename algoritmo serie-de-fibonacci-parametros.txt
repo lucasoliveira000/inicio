@@ -1,0 +1,27 @@
+algoritmo "serie-de-fibonacci-parametro-por-referencia"
+
+var
+   c1,c2,c3,cont,soma:inteiro
+   procedimento proximofibonacci(var a,b:inteiro)
+   var
+      c:inteiro
+   inicio
+          c<-a+b
+          escreva(c)
+          a <-b
+          b<-c
+   fimprocedimento
+inicio
+      c1<-0
+      escreva(c1)
+      c2<-1
+      soma<-c1+c2
+      escreva(c2)
+      para cont <-1 ate 10 faca
+          proximofibonacci(c1,c2)
+          se(c2>0)entao
+            soma<-soma+c2
+          fimse
+      fimpara
+      escreval("  valor total:",soma)
+fimalgoritmo
