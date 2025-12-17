@@ -1,0 +1,39 @@
+algoritmo "ingresso-cinema"
+var
+   assento:vetor[1..10] de inteiro
+   cont1,escolhido:inteiro
+   continuar:caractere
+
+
+inicio
+   repita
+      escreval("LUGARES NA SALA")
+      escreval("")
+      
+        para cont1<-1 ate 10 faca
+          se(assento[cont1]=0)entao
+            escreva("")
+            escreva(" ","[B",cont1,"]")
+          senao
+            escreva("[----]")
+          fimse
+        fimpara
+
+      escreval("")
+      escreval("")
+
+      escreva("escolha um assento B:")
+      leia(escolhido)
+
+        se(assento[escolhido]=0)entao
+           assento[escolhido]<-1
+           escreval("lugar reservado!")
+        senao
+           escreval("erro!lugar ocupado")
+        fimse
+
+      escreva("QUER RESERVAR OUTRO?[s]/[n]: ")
+      leia(continuar)
+      limpatela
+   ate(continuar="n")
+fimalgoritmo

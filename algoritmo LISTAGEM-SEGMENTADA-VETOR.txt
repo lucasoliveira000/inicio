@@ -1,0 +1,36 @@
+algoritmo "LISTAGEM-SEGMENTADA-VETOR"
+var
+   nome:caractere
+   soc:vetor[1..10] de caractere
+   semc:vetor[1..10] de caractere
+   c,tot,tot2:inteiro
+procedimento nomecomC
+inicio
+      tot<-0
+      para c <-1 ate 10 faca
+         escreva("digite seu nome: ")
+         leia(nome)
+         se(copia(maiusc(nome),1,1)="C")entao
+           tot<-tot+1
+           soc[tot]<-nome
+         senao
+            tot2<-tot2+1
+            semc[tot2]<-nome
+         fimse
+      fimpara
+fimprocedimento
+inicio
+      tot<-0
+      nomecomC
+      limpatela
+      escreval("LISTAGEM FINAL COM [C]")
+      para c<-1 ate tot faca
+        escreval(soc[c])
+      fimpara
+      ESCREVAL("")
+      ESCREVAL("=======================")
+      escreval("LISTAGEM FINAL SEM [C]")
+      para c<-1 ate tot2 faca
+        escreval(semc[c])
+      fimpara
+fimalgoritmo

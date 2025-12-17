@@ -1,0 +1,25 @@
+algoritmo "tabela de partidas"
+var
+   time:vetor[1..3] de caractere
+   cont,j,aux:inteiro
+inicio
+      escreval("=======================")
+      escreval("  TABELA DE PARTIDAS  ")
+      ESCREVAL("======================")
+      escreval("")
+      
+      para cont <- 1 ate 3 faca
+         escreva("nome do ",cont,"º time: ")
+         leia(time[cont])
+      fimpara
+      escreval("")
+      
+      para cont<- 1 ate 3 faca
+          para j<- 1 ate 3 faca
+            se( cont <> j )entao
+
+              escreval(time[cont],"[]    x   []",time[j])
+            fimse
+          fimpara
+      fimpara
+fimalgoritmo
